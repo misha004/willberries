@@ -1,6 +1,6 @@
 body {
-   font-family: "Roboto", sans-serif;
-   font-family: "Lato", sans-serif;
+   font-family: "Roboto";
+   font-family: "Lato";
    font-size: 14px;
 }
 
@@ -57,12 +57,27 @@ body {
 .intro {
    background: #B4D1E0 url(../images/sweater.png) no-repeat 80%;
    padding: 90px 0 110px 0;
+   margin-bottom: 50px;
 }
 
 .intro__inner {
    display: flex;
    justify-content: space-between;
    align-items: center;
+}
+
+.switch-button {
+   border-radius: 50%;
+   background: none;
+}
+
+.switch-button-right{
+   border-radius: 50%;
+   background: none;
+   margin-left: auto;
+   transform: rotate(180deg);
+   /* Почему-то я не смог сделать это все одним классом так как не срабатывает
+   .switch-button + .switch-button не могу понять почему)) */
 }
 
 .intro__text {
@@ -109,17 +124,172 @@ body {
    line-height: 20px;   
 }
 
-
-.switch-button {
-   border-radius: 50%;
-   background: none;
+.promo {
+   margin-bottom: 60px;
 }
 
-.switch-button-right{
-   border-radius: 50%;
-   background: none;
-   margin-left: auto;
-   transform: rotate(180deg);
-   /* Почему-то я не смог сделать это все одним классом так как не срабатывает
-   .switch-button + .switch-button не могу понять почему)) */
+.promo__top {
+   display: flex;
+   justify-content: space-between;
+   margin-bottom: 30px;
 }
+
+.promo__top-item {
+   width: 563px;
+   border-radius: 5px;
+   background: url(../images/column-top-1.png) no-repeat;
+   padding: 60px 0 80px 45px;
+}
+
+.promo__top-title {
+   width: 221px;
+   font-family: Roboto;
+   font-size: 25px;
+   margin-bottom: 15px;
+   font-weight: 700;
+   line-height: 30px;      
+}
+
+.promo__top-subtitle {
+   width: 175px;
+   line-height: 20px;
+   margin-bottom: 25px;
+}
+
+.promo__top-link--text {
+   margin-left: 0;
+}
+
+.promo__top-link--img {
+   transform: translateY(20%);
+   margin-left: 5px;
+}
+
+.promo__top-second_item {
+   width: 563px;
+   border-radius: 5px;
+   background: url(../images/column-top-2.png)no-repeat;
+   padding: 60px 0 80px 45px;
+   
+}
+
+.promo__top-second_title {
+   width: 252px;
+   color: #FFF;
+   font-family: Roboto;
+   font-size: 25px;
+   font-weight: 700;
+   line-height: 30px;
+   margin-bottom: 15px;
+
+}
+
+.promo__top-second_subtitle {
+   line-height: 20px;
+   opacity: 0.85;
+   color: #FFF;
+   width: 175px;
+   margin-bottom: 25px;
+}
+
+.promo__bottom {
+   display: flex;
+   justify-content: space-between;
+}
+
+.promo__bottom-item {
+   display: flex;
+   justify-content: space-between;
+   width: 860px;
+   background: #CCD5E6 url(../images/column-bottom.png) no-repeat 80%;
+   padding: 35px 35px 60px 45px;
+   border-radius: 5px;
+}
+
+.promo__bottom-label {
+   display: inline-block;
+   padding: 5px 12px;
+   background: #3DC47E;
+   border-radius: 3px;
+   color: #FFF;
+   font-size: 12px;
+   line-height: 15px;
+   margin-bottom: 30px;
+}
+
+.promo__bottom-title {
+   color: #262D33;
+   font-family: Roboto;
+   font-size: 40px;
+   font-weight: 700;
+   line-height: 50px;
+   width: 318px;
+   margin-bottom: 20px;
+
+}
+
+.promo__bottom-subtitle {
+   line-height: 20px;
+   color: #4B5157;
+   margin-bottom: 40px;
+}
+
+.promo__bottom-pictures {
+   height: 162px;
+   border: 2px solid #fff;
+   border-radius: 5px;
+   background: #CCD5E6;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+}
+
+.promo__bottom-input {
+   display: none;
+}
+
+.promo__bottom-picture {   
+  height: 54px;
+  width: 54px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.promo__bottom-input:checked + .promo__bottom-picture{
+   background: #fff;
+   transition: .6s;
+}
+
+.promo__bottom-picture + .promo__bottom-input + .promo__bottom-picture {
+   border-top: 2px solid #fff;
+}
+
+.promo__bottom-second-item {
+   width: 277px;
+   background: #FF4F52 url(../images/column-bottom-2.png) no-repeat 100%;
+   border-radius: 5px;
+   padding: 35px 0px 0px 25px;
+}
+
+.promo__bottom-second-title {
+   font-family: Roboto;
+   font-size: 25px;
+   color: #fff;
+   font-weight: 700;
+   line-height: 30px;
+   margin-bottom: 10px;
+}
+
+.promo__bottom-second-subtitle {
+   color: #FFC4C9;
+   line-height: 20px;
+   margin-bottom: 15px;
+}
+
+.promo__bottom-second-price {
+   color: #FFF;
+   font-weight: 900;
+}
+
+
+
